@@ -30,7 +30,7 @@
       min-height: 100vh;
       background: radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%), var(--bg);
       color: var(--fg);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
@@ -74,9 +74,9 @@
       color: var(--text);
     }
 
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
       body {
-        padding: 2.25rem 1.1rem 3rem;
+        padding: 2.2rem 1rem 3rem;
       }
 
       main {
@@ -84,25 +84,29 @@
       }
 
       h1 {
-        font-size: clamp(2rem, 7vw, 2.55rem);
-        line-height: 1.05;
-        margin-bottom: 0.8rem;
         max-width: 10ch;
+        font-size: 2.15rem;
+        line-height: 1.06;
+        margin-bottom: 0.78rem;
       }
 
       p,
       .intro,
       .closing {
-        font-size: 1.02rem;
-        line-height: 1.62;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      p {
+        margin-bottom: 0.9rem;
       }
 
       .intro {
-        margin-bottom: 0.85rem;
+        margin-bottom: 0.9rem;
       }
 
       .closing {
-        margin-top: 0.9rem;
+        margin-top: 0.95rem;
       }
     }
   </style>
