@@ -10,7 +10,7 @@
       --bg: #0c1323;
       --fg: #f4efe5;
       --text: #ded7ca;
-      --max: 54ch;
+      --max: 56ch;
       --size: clamp(1rem, 0.14vw + 0.98rem, 1.12rem);
       --leading: 1.7;
       --gap: 1.15em;
@@ -25,7 +25,7 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      padding: clamp(3.6rem, 9vh, 6.8rem) clamp(1.25rem, 4.2vw, 3rem) clamp(4.5rem, 11vh, 7rem);
+      padding: clamp(3rem, 8vh, 5.8rem) clamp(1.25rem, 4.2vw, 3rem) clamp(4rem, 10vh, 6.4rem);
     }
     main {
       width: min(var(--max), 100%);
@@ -34,25 +34,24 @@
       line-height: var(--leading);
     }
     h1 {
-      margin: 0 0 0.72rem;
+      margin: 0 0 1.05rem;
       font-weight: 500;
       color: var(--fg);
-      max-width: 11ch;
-      font-size: clamp(2.75rem, 2.4vw + 1.55rem, 3.95rem);
-      line-height: 1.02;
+      max-width: 12ch;
+      font-size: clamp(2.6rem, 2.15vw + 1.5rem, 3.75rem);
+      line-height: 1.03;
       letter-spacing: 0.003em;
     }
     p {
-      margin: 0 0 var(--gap);
+      margin: 0 0 1.02rem;
       color: var(--text);
     }
     .intro {
-      font-size: clamp(1.12rem, 0.35vw + 1.05rem, 1.22rem);
-      line-height: 1.62;
-      margin-bottom: 1.35rem;
+      color: var(--fg);
+      margin-bottom: 1.18rem;
     }
     .closing {
-      margin-top: 0.45rem;
+      margin-top: 0.72rem;
       color: var(--text);
     }
   </style>
@@ -66,4 +65,3 @@
   </main>
 </body>
 </html>
-
