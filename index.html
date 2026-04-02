@@ -4,20 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Consciousness Engineering Labs</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
   <style>
     :root {
       color-scheme: dark;
       --bg: #0c1323;
       --fg: #f4efe5;
       --text: #ded7ca;
-      --max: 58ch;
-      --body-size: clamp(1.04rem, 0.18vw + 1rem, 1.12rem);
-      --body-leading: 1.68;
+      --max: 56ch;
+      --size: clamp(1rem, 0.14vw + 0.98rem, 1.12rem);
+      --leading: 1.7;
     }
 
     * {
@@ -33,11 +31,9 @@
 
     body {
       min-height: 100vh;
-      background:
-        radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%),
-        var(--bg);
+      background: radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%), var(--bg);
       color: var(--fg);
-      font-family: "Iowan Old Style", "Literata", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+      font-family: "Iowan Old Style", "Newsreader", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
       font-optical-sizing: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -48,43 +44,38 @@
     main {
       width: min(var(--max), 100%);
       margin: 0 auto;
+      font-size: var(--size);
+      line-height: var(--leading);
     }
 
     h1 {
-      margin: 0 0 0.95rem;
+      margin: 0 0 1.05rem;
       font-weight: 500;
       color: var(--fg);
       max-width: 12ch;
-      font-size: clamp(2.35rem, 1.85vw + 1.45rem, 3.3rem);
-      line-height: 1.04;
+      font-size: clamp(2.6rem, 2.15vw + 1.5rem, 3.75rem);
+      line-height: 1.03;
       letter-spacing: 0.003em;
     }
 
-    p,
-    .intro,
-    .closing {
-      font-size: var(--body-size);
-      line-height: var(--body-leading);
-    }
-
     p {
-      margin: 0 0 0.95rem;
+      margin: 0 0 1.02rem;
       color: var(--text);
     }
 
     .intro {
       color: var(--fg);
-      margin-bottom: 0.95rem;
+      margin-bottom: 1.18rem;
     }
 
     .closing {
-      margin-top: 1.05rem;
+      margin-top: 0.72rem;
       color: var(--text);
     }
 
     @media (max-width: 640px) {
       body {
-        padding: 2.2rem 1rem 3rem;
+        padding: 2.15rem 1rem 2.85rem;
       }
 
       main {
@@ -92,25 +83,18 @@
       }
 
       h1 {
-        max-width: 11ch;
-        font-size: 2.1rem;
-        line-height: 1.05;
-        margin-bottom: 0.82rem;
-      }
-
-      p,
-      .intro,
-      .closing {
-        font-size: 1rem;
-        line-height: 1.6;
+        margin-bottom: 0.78rem;
+        max-width: 9.5ch;
+        font-size: clamp(2.05rem, 7vw, 2.45rem);
+        line-height: 1.01;
       }
 
       p {
-        margin-bottom: 0.88rem;
+        margin-bottom: 0.86rem;
       }
 
       .intro {
-        margin-bottom: 0.88rem;
+        margin-bottom: 0.86rem;
       }
 
       .closing {
