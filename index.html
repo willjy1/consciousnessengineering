@@ -1,16 +1,16 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CE Labs</title>
+  <title>Consciousness Engineering Labs</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #060b16;
-      --fg: #f6f9ff;
-      --muted: #dbe3f2;
-      --max: 62ch;
+      --bg: #0c1323;
+      --fg: #f4efe5;
+      --text: #ded7ca;
+      --max: 54ch;
       --size: clamp(1rem, 0.14vw + 0.98rem, 1.12rem);
       --leading: 1.7;
       --gap: 1.15em;
@@ -19,91 +19,50 @@
     html, body { margin: 0; min-height: 100%; }
     body {
       min-height: 100vh;
-      background: radial-gradient(900px 560px at 50% -180px, rgba(31, 52, 97, 0.11), transparent 60%), var(--bg);
+      background: radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%), var(--bg);
       color: var(--fg);
       font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: clamp(3.4rem, 6vw, 5.6rem) clamp(1.15rem, 4.2vw, 3rem);
+      padding: clamp(3.6rem, 9vh, 6.8rem) clamp(1.25rem, 4.2vw, 3rem) clamp(4.5rem, 11vh, 7rem);
     }
     main {
       width: min(var(--max), 100%);
+      margin: 0 auto;
       font-size: var(--size);
       line-height: var(--leading);
     }
-    h1, h2 {
-      margin: 0 0 0.45em;
-      font-weight: 500;
-      color: rgba(244, 248, 255, 0.98);
-    }
     h1 {
-      font-size: clamp(2.2rem, 1.8vw + 1.45rem, 3.05rem);
-      line-height: 1.1;
-      letter-spacing: 0.006em;
-      margin-bottom: 0.6rem;
-    }
-    strong {
-      color: rgba(244, 248, 255, 0.96);
-      font-weight: 600;
+      margin: 0 0 0.72rem;
+      font-weight: 500;
+      color: var(--fg);
+      max-width: 11ch;
+      font-size: clamp(2.75rem, 2.4vw + 1.55rem, 3.95rem);
+      line-height: 1.02;
+      letter-spacing: 0.003em;
     }
     p {
       margin: 0 0 var(--gap);
-      color: var(--muted);
+      color: var(--text);
     }
     .intro {
-      color: rgba(244, 248, 255, 0.97);
-      margin-bottom: 1.25rem;
-    }
-    .program-lead {
-      margin-top: 0;
-      margin-bottom: 1.45rem;
-      color: var(--muted);
-    }
-    .lines {
-      margin: 0 0 2rem;
-    }
-    .line {
-      margin: 0 0 0.9rem;
-      color: var(--muted);
-    }
-    .target {
-      display: inline;
-      color: rgba(244, 248, 255, 0.96);
-      font-weight: 600;
-    }
-    .question {
-      color: var(--muted);
+      font-size: clamp(1.12rem, 0.35vw + 1.05rem, 1.22rem);
+      line-height: 1.62;
+      margin-bottom: 1.35rem;
     }
     .closing {
-      margin-top: 2.55rem;
-      color: rgba(244, 248, 255, 0.9);
+      margin-top: 0.45rem;
+      color: var(--text);
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>CE Labs</h1>
-
+    <h1>Consciousness Engineering Labs</h1>
     <p class="intro">CE Labs aims to understand consciousness and how to engineer it. We design experiments to probe the mechanics and structure of experience and develop neurotechnologies to interface with it.</p>
-
-    <p class="program-lead">In the coming months, we will conduct a set of tFUS experiments:</p>
-
-    <div class="lines">
-      <p class="line"><span class="target">Posterior cingulate cortex:</span> <span class="question">Whether modulation shifts self-related experience, sense of time, or memory-linked effects.</span></p>
-      <p class="line"><span class="target">Thalamus:</span> <span class="question">Whether thalamic modulation shifts conscious access, arousal, or level of consciousness.</span></p>
-      <p class="line"><span class="target">dACC and posterior insula:</span> <span class="question">Whether these targets shift pain, valence, or unpleasantness in distinct ways.</span></p>
-      <p class="line"><span class="target">NAcc and sgACC:</span> <span class="question">Whether reward-related targets shift salience, reward, or motivational tone.</span></p>
-      <p class="line"><span class="target">Pallidum and related subcortical targets:</span> <span class="question">Whether subcortical arousal circuitry offers another route into arousal and access.</span></p>
-      <p class="line"><span class="target">Psychedelic states:</span> <span class="question">The same target tests under psychedelic conditions.</span></p>
-      <p class="line"><span class="target">Disorders of consciousness:</span> <span class="question">Whether arousal, access, or communication can be restored in low-output patients.</span></p>
-    </div>
-
-    <p class="closing">Our long term resolution is to be target- and modality-agnostic and to follow the approach that seems most promising. With a small number of experiments, we believe we can shed light on the central problems of consciousness and begin building neurotechnologies that give humans broad control over conscious experience.</p>
-
+    <p>In the coming months, we will run a set of tFUS experiments.</p>
+    <p class="closing">Over time, we will follow whatever approach seems most promising. With a small number of experiments, we will shed light on the central problems of consciousness and begin building neurotechnologies that give humans broad control over conscious experience.</p>
   </main>
 </body>
 </html>
