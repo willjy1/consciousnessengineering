@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Consciousness Engineering Labs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+
   <style>
     :root {
       color-scheme: dark;
@@ -28,9 +33,12 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%), var(--bg);
+      background:
+        radial-gradient(900px 560px at 50% -200px, rgba(78, 112, 188, 0.1), transparent 58%),
+        var(--bg);
       color: var(--fg);
-      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+      font-family: "Iowan Old Style", "Literata", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+      font-optical-sizing: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
@@ -72,6 +80,42 @@
     .closing {
       margin-top: 1.05rem;
       color: var(--text);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 2.2rem 1rem 3rem;
+      }
+
+      main {
+        width: 100%;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: 2.1rem;
+        line-height: 1.05;
+        margin-bottom: 0.82rem;
+      }
+
+      p,
+      .intro,
+      .closing {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      p {
+        margin-bottom: 0.88rem;
+      }
+
+      .intro {
+        margin-bottom: 0.88rem;
+      }
+
+      .closing {
+        margin-top: 0.96rem;
+      }
     }
   </style>
 </head>
